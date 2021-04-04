@@ -20,7 +20,6 @@ class StoreController extends Controller
         
         $validated = $request->validate([
             'thread_id' => 'required',
-            'title' => 'required|max:255',
             'comment' => 'required'            
         ]);
 

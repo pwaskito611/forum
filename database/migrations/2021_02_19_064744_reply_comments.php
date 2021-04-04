@@ -19,7 +19,7 @@ class ReplyComments extends Migration
             $table->integer('user_id');
             $table->longText('comment');
             $table->timestamps();
-            $table->dropSoftDeletes();
+            $table->softDeletes()->nullable();
         });
     }
 

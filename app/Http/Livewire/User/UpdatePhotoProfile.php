@@ -12,7 +12,7 @@ class UpdatePhotoProfile extends Component
 
     public $photoPath;
     public $image;
-    public $success  = false;
+    public $success;
 
 
     public function updated() {

@@ -18,7 +18,7 @@ class CommentReport extends Migration
             $table->integer('reported_comment_id');
             $table->integer('reporter_id');
             $table->text('reason');
-            $table->text('additional');
+            $table->text('additional')->nullable();
         });
     }
 

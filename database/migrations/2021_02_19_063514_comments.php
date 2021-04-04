@@ -18,9 +18,9 @@ class Comments extends Migration
             $table->integer('thread_id');
             $table->integer('user_id');
             $table->longText('comment');
-            $table->string('image_path');
+            $table->string('image_path')->nullable();
             $table->timestamps();
-            $table->softDeletes();
+            $table->softDeletes()->nullable();
         });
     }
 

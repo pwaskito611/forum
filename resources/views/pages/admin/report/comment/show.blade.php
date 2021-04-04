@@ -16,7 +16,7 @@
                     @foreach ($comments as $comment)
                         <tr class="border">
                             <td class="border">
-                                {{$comment->image_path}}
+                               <img src="{{$comment->image_path}}" style="max-height: 80px; max-width : 80px;">
                             </td>
                             <td class="border">
                                 <a href="{{url('thread/'. $comment->thread_id)}}">

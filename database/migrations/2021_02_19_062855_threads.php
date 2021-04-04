@@ -18,10 +18,10 @@ class Threads extends Migration
             $table->integer('user_id');
             $table->string('topic');
             $table->string('title');
-            $table->string('image_path');
+            $table->string('image_path')->nullable();
             $table->longText('content');
             $table->timestamps();
-            $table->softDeletes();
+            $table->softDeletes()->nullable();
         });
     }
 

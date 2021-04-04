@@ -18,7 +18,7 @@ class MainNotification extends Migration
             $table->integer('viewer_id');
             $table->string('object');
             $table->timestamps();
-            $table->smallInt('is_readed');
+            $table->smallInteger('is_readed');
         });
     }
 

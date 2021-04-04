@@ -18,7 +18,7 @@ class ReplyCommentReport extends Migration
             $table->integer('reported_reply_comment_id');
             $table->integer('reporter_id');
             $table->text('reason');
-            $table->text('additional');
+            $table->text('additional')->nullable();
         });
     }
 

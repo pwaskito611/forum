@@ -18,7 +18,7 @@ class UserReport extends Migration
             $table->integer('reported_user_id');
             $table->integer('reporter_id');
             $table->text('reason');
-            $table->text('additional');
+            $table->text('additional')->nullable();
         });
     }
 

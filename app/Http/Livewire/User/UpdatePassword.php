@@ -12,6 +12,7 @@ class UpdatePassword extends Component
     public $password;
     public $rePassword;
     public $newPassword;
+    public $isSuccess;
 
     protected $rules = [
         'password' => 'required',

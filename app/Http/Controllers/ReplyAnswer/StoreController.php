@@ -11,7 +11,7 @@ class StoreController extends Controller
     public function main(Request $request) {
 
         $validated = $request->validate([
-            'comment_id' => 'required',
+            'id' => 'required',
             'comment' => 'required'            
         ]);
 

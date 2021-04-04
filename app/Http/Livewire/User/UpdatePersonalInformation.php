@@ -12,7 +12,7 @@ class UpdatePersonalInformation extends Component
 {
     public $name;
     public $description;
-    public $success = false;
+    public $success;
 
     protected $rules = [
         'name' => 'required|max:50',

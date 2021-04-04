@@ -27,6 +27,6 @@ class FollowingPerson extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bookmarks');
+        Schema::dropIfExists('following_person');
     }
 }
