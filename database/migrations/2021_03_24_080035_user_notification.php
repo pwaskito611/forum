@@ -14,10 +14,10 @@ class UserNotification extends Migration
     public function up()
     {
         Schema::create('user_notification', function (Blueprint $table) {
-            $table->id();
-            $table->integer('notification_id');
-            $table->integer('user_id');
-            $table->integer('thread_id');
+            $table->uuid('id')->primary();
+            $table->uuid('notification_id');
+            $table->uuid('user_id');
+            $table->uuid('thread_id');
         });
     }
 

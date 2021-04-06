@@ -14,9 +14,9 @@ class UserReport extends Migration
     public function up()
     {
         Schema::create('user_report', function (Blueprint $table) {
-            $table->id();
-            $table->integer('reported_user_id');
-            $table->integer('reporter_id');
+            $table->uuid('id')->primary();
+            $table->uuid('reported_user_id');
+            $table->uuid('reporter_id');
             $table->text('reason');
             $table->text('additional')->nullable();
         });

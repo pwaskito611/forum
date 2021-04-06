@@ -73,12 +73,18 @@
         @foreach ($users as $user)
         <div class="border rounded bg-white mt-5 flex px-1 py-2">
             @if ($user->photo_path != null)
-                <img src="{{url($user->photo_path)}}" class="w-10 h-10 rounded-full">
+                <a href="{{url('user/' . $user->id)}}">
+                    <img src="{{url($user->photo_path)}}" class="w-10 h-10 rounded-full">
+                </a>
              @else
-                <img src="{{url('/storage/asset/man.svg')}}" class="w-10 h-10 rounded-full">
+                <a href="{{url('user/' . $user->id)}}">
+                    <img src="{{url('/storage/asset/man.svg')}}" class="w-10 h-10 rounded-full">
+                </a>
              @endif
             <div class="break-all">
-                <h2 class="text-xl ml-2 mt-1">{{$user->name}}</h2>
+                <a href="{{url('user/'. $user->id)}}">
+                    <h2 class="text-xl ml-2 mt-1">{{$user->name}}</h2>
+                </a>
             </div>
             <div class="ml-auto mt-2">
             @auth

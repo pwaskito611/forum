@@ -14,9 +14,9 @@ class FollowingThread extends Migration
     public function up()
     {
         Schema::create('following_threads', function (Blueprint $table) {
-            $table->id();
-            $table->integer('thread_id');
-            $table->integer('user_id');
+            $table->uuid('id')->primary();
+            $table->uuid('thread_id');
+            $table->uuid('user_id');
         });
     }
 

@@ -14,9 +14,9 @@ class FollowingPerson extends Migration
     public function up()
     {
         Schema::create('following_person', function (Blueprint $table) {
-            $table->id();
-            $table->integer('follower_id');
-            $table->integer('followed_id');
+            $table->uuid('id')->primary();
+            $table->uuid('follower_id');
+            $table->uuid('followed_id');
         });
     }
 

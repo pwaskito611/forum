@@ -14,9 +14,9 @@ class ReplyComments extends Migration
     public function up()
     {
         Schema::create('reply_comments', function (Blueprint $table) {
-            $table->id();
-            $table->integer('comment_id');
-            $table->integer('user_id');
+            $table->uuid('id')->primary();
+            $table->uuid('comment_id');
+            $table->uuid('user_id');
             $table->longText('comment');
             $table->timestamps();
             $table->softDeletes()->nullable();

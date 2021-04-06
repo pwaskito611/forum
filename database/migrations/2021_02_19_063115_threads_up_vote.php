@@ -14,9 +14,9 @@ class ThreadsUpVote extends Migration
     public function up()
     {
         Schema::create('threads_up_vote', function (Blueprint $table) {
-            $table->id();
-            $table->integer('thread_id');
-            $table->integer('user_id');
+            $table->uuid('id')->primary();
+            $table->uuid('thread_id');
+            $table->uuid('user_id');
         });
     }
 

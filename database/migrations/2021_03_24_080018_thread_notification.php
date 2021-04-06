@@ -14,10 +14,10 @@ class ThreadNotification extends Migration
     public function up()
     {
         Schema::create('thread_notification', function (Blueprint $table) {
-            $table->id();
-            $table->integer('notification_id');
-            $table->integer('thread_id');
-            $table->integer('answerer_id');
+            $table->uuid('id')->primary();
+            $table->uuid('notification_id');
+            $table->uuid('thread_id');
+            $table->uuid('answerer_id');
         });
     }
 

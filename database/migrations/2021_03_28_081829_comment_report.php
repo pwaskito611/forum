@@ -14,9 +14,9 @@ class CommentReport extends Migration
     public function up()
     {
         Schema::create('comment_report', function (Blueprint $table) {
-            $table->id();
-            $table->integer('reported_comment_id');
-            $table->integer('reporter_id');
+            $table->uuid('id')->primary();
+            $table->uuid('reported_comment_id');
+            $table->uuid('reporter_id');
             $table->text('reason');
             $table->text('additional')->nullable();
         });

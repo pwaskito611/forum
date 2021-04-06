@@ -14,9 +14,9 @@ class ReplyCommentsDownVote extends Migration
     public function up()
     {
         Schema::create('reply_comments_down_vote', function (Blueprint $table) {
-            $table->id();
-            $table->integer('reply_comment_id');
-            $table->integer('user_id');
+            $table->uuid('id')->primary();
+            $table->uuid('reply_comment_id');
+            $table->uuid('user_id');
         });
     }
 

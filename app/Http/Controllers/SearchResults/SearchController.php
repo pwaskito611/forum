@@ -12,7 +12,7 @@ class SearchController extends Controller
 {  
     public function main(Request $request) {
 
-        $users = User::whereRaw('name regexp "'. $request->search . '"')
+        $users = User::whereRaw('name regexp "'. $request->search . '" OR id = "'. $request->search. '"')
         ->take(4)
         ->get();
 

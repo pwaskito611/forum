@@ -19,8 +19,7 @@
                     @livewire('user.follow', [ 'userID' => $user->id])
                 </div>
                 <div class="col-span-3  word-break ml-5 mt-5">
-                    <h2 class="text-2xl font-semibold">{{$user->name}}</h2>
-                    <h3 class="text-xl font-medium">ID : {{$user->id}}</h3>
+                    <h2 class="text-2xl font-semibold mt-5">{{$user->name}}</h2>
                 </div>
                 <div class="hidden sm:block col-span-2 py-10">
                    @livewire('user.follow', [ 'userID' => $user->id])

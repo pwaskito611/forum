@@ -14,9 +14,9 @@ class CommentsDownVote extends Migration
     public function up()
     {
         Schema::create('comments_down_vote', function(Blueprint $table) {
-            $table->id();
-            $table->integer('comment_id');
-            $table->integer('user_id');
+            $table->uuid('id')->primary();
+            $table->uuid('comment_id');
+            $table->uuid('user_id');
         });
     }
 

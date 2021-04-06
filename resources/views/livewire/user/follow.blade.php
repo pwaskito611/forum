@@ -16,7 +16,7 @@
 
     @else 
     <a href="{{url('login')}}" class="px-4 py-2 bg-red-400 text-white rounded">
-        Follow
+        Ikuti
     </a>    
     @endif
 </center>

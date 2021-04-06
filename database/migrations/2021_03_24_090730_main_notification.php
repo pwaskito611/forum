@@ -14,8 +14,8 @@ class MainNotification extends Migration
     public function up()
     {
         Schema::create('notification', function (Blueprint $table) {
-            $table->id();
-            $table->integer('viewer_id');
+            $table->uuid('id')->primary();
+            $table->uuid('viewer_id');
             $table->string('object');
             $table->timestamps();
             $table->smallInteger('is_readed');

@@ -14,8 +14,8 @@ class Threads extends Migration
     public function up()
     {
         Schema::create('threads', function (Blueprint $table) {
-            $table->id();
-            $table->integer('user_id');
+            $table->uuid('id')->primary();
+            $table->uuid('user_id');
             $table->string('topic');
             $table->string('title');
             $table->string('image_path')->nullable();
