@@ -14,7 +14,7 @@
                 </a>
             @else
                 <a href="{{url('user/'. $user->id)}}">
-                    <img src="{{url('/storage/asset/man.svg')}}" class="w-10 h-10 rounded-full">
+                    <img src="{{url('asset/man.svg')}}" class="w-10 h-10 rounded-full">
                 </a>
             @endif
             <a href="{{url('user/'. $user->id)}}">

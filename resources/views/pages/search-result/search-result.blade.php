@@ -8,7 +8,7 @@
     <div class="col-span-6  lg:col-span-3">
         @if ( isset($threads[0]->id) )
         <div class="mt-5 flex px-1">
-            <img src="{{url('storage/asset/discussion.svg')}}" class="w-10 h-10">
+            <img src="{{url('asset/discussion.svg')}}" class="w-10 h-10">
             <h2 class="text-2xl ml-2 mt-1">Diskusi</h2>
             <a href="{{url('search/thread?search='. $search)}}" class="text-blue-600 mt-2 ml-auto">selengkapnya</a>
         </div>    
@@ -28,7 +28,7 @@
               <div class="flex">
                   @if ($item->user->photo_path == null)
                     <a href="{{url('user/'. $item->user->id)}}">
-                        <img src="{{url('storage/asset/man.svg')}}" class="w-6 h-6 rounded-full">
+                        <img src="{{url('asset/man.svg')}}" class="w-6 h-6 rounded-full">
                     </a>
                   @else 
                     <a href="{{url('user/'. $item->user->id)}}">
@@ -78,7 +78,7 @@
                 </a>
              @else
                 <a href="{{url('user/' . $user->id)}}">
-                    <img src="{{url('/storage/asset/man.svg')}}" class="w-10 h-10 rounded-full">
+                    <img src="{{url('asset/man.svg')}}" class="w-10 h-10 rounded-full">
                 </a>
              @endif
             <div class="break-all">

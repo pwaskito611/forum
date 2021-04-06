@@ -26,10 +26,10 @@
                     </a>
                     @else
                     <a href="#" onclick="return false;" class="dropdown-account-show">
-                        <img src="{{url('storage/asset/man.svg')}}" class="w-10 h-10 rounded-full">
+                        <img src="{{url('asset/man.svg')}}" class="w-10 h-10 rounded-full">
                     </a>
                     <a href="#" onclick="return false;" class="dropdown-account-hide hidden">
-                        <img src="{{url('storage/asset/man.svg')}}" class="w-10 h-10 rounded-full">
+                        <img src="{{url('asset/man.svg')}}" class="w-10 h-10 rounded-full">
                     </a>
                     @endif
                     <div class="bg-white absolute rounded border pl-auto hidden mr-10" id="account-item-dropdown">
@@ -122,7 +122,7 @@
          <li class="my-2">
             <div class="flex">
                 <a href="{{url('/')}}">
-                    <img src="{{url('storage/asset/expand.png')}}" class="w-6 h-6 mr-1">
+                    <img src="{{url('asset/expand.png')}}" class="w-6 h-6 mr-1">
                 </a>
                 <a href="{{url('/')}}">
                     <p>Semuanya</p>
@@ -132,7 +132,7 @@
         <li class="my-2 ">
             <div class="flex">
                 <a href="{{url('/topik/ide-bisnis')}}">
-                    <img src="{{url('storage/asset/light-bulb.svg')}}" class="w-6 h-6 mr-1">
+                    <img src="{{url('asset/light-bulb.svg')}}" class="w-6 h-6 mr-1">
                 </a>
                 <a href="{{url('/topik/ide-bisnis')}}">
                     <p>Ide Bisnis</p>
@@ -142,7 +142,7 @@
         <li class="my-2">
             <div class="flex">
                 <a href="{{url('topik/rencana-bisnis')}}">
-                    <img src="{{url('storage/asset/pencil.svg')}}" class="w-6 h-6 mr-1">
+                    <img src="{{url('asset/pencil.svg')}}" class="w-6 h-6 mr-1">
                 </a>
                 <a href="{{url('topik/rencana-bisnis')}}">
                     <p>Rencana Bisnis</p>
@@ -152,7 +152,7 @@
         <li class="my-2">
             <div class="flex">
                 <a href="{{url('topik/startup')}}">
-                    <img src="{{url('storage/asset/startup.svg')}}" class="w-6 h-6 mr-1">
+                    <img src="{{url('asset/startup.svg')}}" class="w-6 h-6 mr-1">
                 </a>
                 <a href="{{url('topik/startup')}}">
                     <p>Startup</p>
@@ -162,7 +162,7 @@
         <li class="my-2">
             <div class="flex">
                 <a href="{{url('topik/umkm')}}">
-                    <img src="{{url('storage/asset/store.svg')}}" class="w-6 h-6 mr-1">
+                    <img src="{{url('asset/store.svg')}}" class="w-6 h-6 mr-1">
                 </a>
                 <a href="{{url('topik/umkm')}}">
                     <p>UMKM</p>
@@ -172,7 +172,7 @@
         <li class="my-2">
             <div class="flex">
                 <a href="{{url('topik/marketing')}}">
-                    <img src="{{url('storage/asset/loudspeaker.svg')}}" class="w-6 h-6 mr-1">
+                    <img src="{{url('asset/loudspeaker.svg')}}" class="w-6 h-6 mr-1">
                 </a>
                 <a href="{{url('topik/marketing')}}">
                     <p>Marketing</p>
@@ -182,7 +182,7 @@
         <li class="my-2">
             <div class="flex">
                 <a href="{{url('topik/relasi-bisnis')}}">
-                    <img src="{{url('storage/asset/relations.svg')}}" class="w-6 h-6 mr-1">
+                    <img src="{{url('asset/relations.svg')}}" class="w-6 h-6 mr-1">
                 </a>
                 <a href="{{url('topik/relasi-bisnis')}}">
                     <p>Relasi Bisnis</p>
@@ -192,7 +192,7 @@
         <li class="my-2">
             <div class="flex">
                 <a href="{{url('topik/hukum-terkait-bisnis')}}">
-                    <img src="{{url('storage/asset/law-book.svg')}}" class="w-6 h-6 mr-2">
+                    <img src="{{url('asset/law-book.svg')}}" class="w-6 h-6 mr-2">
                 </a>
                 <a href="{{url('topik/hukum-terkait-bisnis')}}">
                     <p>Hukum Terkait Bisnis</p>

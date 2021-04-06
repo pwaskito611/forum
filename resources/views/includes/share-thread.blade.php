@@ -7,21 +7,21 @@
             <li class="hover:bg-gray-200">
                 <a target="_blank" href='{{"https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F" . url('/') ."%2Fthread%2F" .$threadID ."&amp;src=sdkpreparse"}}' 
                     class="fb-xfbml-parse-ignore flex py-1 px-4">
-                    <img src="{{url('storage/asset/facebook.svg')}}" class="w-6 h-6">&nbsp;
+                    <img src="{{url('asset/facebook.svg')}}" class="w-6 h-6">&nbsp;
                      <p class="">Facebook</p>
                 </a>
             </li>
             <li class="hover:bg-gray-200">
                 <a target="_blank" href='{{"https://twitter.com/share?url=https%3A%2F%2F". url('/') ."%2Fthread%2F" . $threadID}}' 
                     class="fb-xfbml-parse-ignore flex py-1 px-4">
-                    <img src="{{url('storage/asset/twitter.svg')}}" class="w-6 h-6">&nbsp;
+                    <img src="{{url('asset/twitter.svg')}}" class="w-6 h-6">&nbsp;
                      <p class="">Twitter</p>
                 </a>
             </li>
             <li class="hover:bg-gray-200">
                 <button id="copy-link-{{$threadID}}"
                     class="flex py-1 px-4">
-                    <img src="{{url('storage/asset/link.svg')}}" class="w-6 h-6 rounded-full">&nbsp;
+                    <img src="{{url('asset/link.svg')}}" class="w-6 h-6 rounded-full">&nbsp;
                      <p class="">Salin link</p>
                      <input type="hidden" value="{{url('thread/'. $threadID)}}" id="link-{{$threadID}}">
                 </button>

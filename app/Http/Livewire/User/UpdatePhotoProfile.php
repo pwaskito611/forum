@@ -40,7 +40,7 @@ class UpdatePhotoProfile extends Component
             return;
         }
             
-        $this->photoPath = url('storage/asset/man.svg');
+        $this->photoPath = url('asset/man.svg');
     }
 
     public function render()

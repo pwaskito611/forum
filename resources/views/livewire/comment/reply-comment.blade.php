@@ -28,7 +28,7 @@
         </a>
         @else
        <a href="{{url('user/'. $r['user']->id)}}">
-        <img class="w-6 h-6 rounded-full" src="{{url('storage/asset/man.svg')}}">
+        <img class="w-6 h-6 rounded-full" src="{{url('asset/man.svg')}}">
        </a>
         @endif
         <a href="{{url('user/'. $r['user']->id)}}" class="ml-1">{{$r['user']->name}}</a>

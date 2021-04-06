@@ -20,7 +20,7 @@
               <div class="flex">
                   @if ($item->user->photo_path == null)
                     <a href="{{url('user/'. $item->user->id)}}">
-                        <img src="{{url('storage/asset/man.svg')}}" class="w-6 h-6 rounded-full">
+                        <img src="{{url('asset/man.svg')}}" class="w-6 h-6 rounded-full">
                     </a>
                   @else 
                     <a href="{{url('user/'. $item->user->id)}}">

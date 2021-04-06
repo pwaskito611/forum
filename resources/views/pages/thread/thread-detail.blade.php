@@ -20,7 +20,7 @@
                   @if ($thread['user']->photo_path != null)
                   <img src="{{url($thread['user']->photo_path)}}" class="w-6 h-6 rounded-full">
                   @else
-                  <img src="{{url('storage/asset/man.svg')}}" class="w-6 h-6 rounded-full">
+                  <img src="{{url('asset/man.svg')}}" class="w-6 h-6 rounded-full">
                   @endif
                   <p>{{$thread['user']->name}}</p>
                   <time class="timeago ml-1 font-light since-time text-gray-400" datetime="{{date('Y-m-d H:i:s',strtotime('+7 hour',strtotime($thread->created_at)))}}"></time>
@@ -71,7 +71,7 @@
                    @if ($comment['user']->photo_path != null)
                     <img src="{{url($comment['user']->photo_path)}}" class="w-6 h-6 rounded-full">
                    @else
-                    <img src="{{url('storage/asset/man.svg')}}" class="w-6 h-6 rounded-full">
+                    <img src="{{url('asset/man.svg')}}" class="w-6 h-6 rounded-full">
                    @endif
                    <p>{{$comment['user']->name}}</p>
                    <time class="timeago ml-1 font-light since-time text-gray-400" datetime="{{date('Y-m-d H:i:s',strtotime('+7 hour',strtotime($comment->created_at)))}}"></time>

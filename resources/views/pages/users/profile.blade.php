@@ -12,7 +12,7 @@
                     @if ($user->photo_path != null)
                         <img src="{{url($user->photo_path)}}" class="lg:w-20 h-20 rounded-full mt-5 ml-5">
                     @else
-                    <img src="{{url('storage/asset/man.svg')}}" class="lg:w-20 h-20 rounded-full mt-5 ml-5">
+                    <img src="{{url('asset/man.svg')}}" class="lg:w-20 h-20 rounded-full mt-5 ml-5">
                     @endif
                 </div>
                 <div class="block col-span-3 sm:hidden mt-10">
@@ -43,7 +43,7 @@
                      <div class="flex">
                          @if ($item->user->photo_path == null)
                            <a href="{{url('user/'. $user->id)}}">
-                               <img src="{{url('storage/asset/man.svg')}}" class="w-6 h-6 rounded-full">
+                               <img src="{{url('asset/man.svg')}}" class="w-6 h-6 rounded-full">
                            </a>
                          @else 
                            <a href="{{url('user/'. $user->id)}}">
