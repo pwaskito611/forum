@@ -22,7 +22,7 @@ class UpdateController extends Controller
             return abort(403);
         }
         
-        $thread->title = $request->title; 
+        $thread->title = str_replace('"', "''", $request->title);
         $thread->content = $request->content;
         $thread->image_path = $request->image_path;
         $thread->topic = $request->topic;
@@ -35,8 +35,9 @@ class UpdateController extends Controller
         $validated = $request->validate([
             'title' => 'required|max:255',
             'content' => 'required',
-            'topic' => 'required',
+            'topic' => 'required|in:ide bisnis,rencana bisnis,startup,UMKM,marketing,relasi bisnis,hukum,lainnya',
         ]);
+
     }
 }
  

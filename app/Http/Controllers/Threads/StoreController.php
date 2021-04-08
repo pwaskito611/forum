@@ -16,7 +16,7 @@ class StoreController extends Controller
         $this->validation($request);
 
         $thread = new Thread;
-        $thread->title = $request->title;
+        $thread->title = str_replace('"', "''", $request->title);
         $thread->content = $request->content;
         $thread->image_path = $request->image_path;
         $thread->topic = $request->topic;
@@ -32,7 +32,7 @@ class StoreController extends Controller
         $validated = $request->validate([
             'title' => 'required|max:255',
             'content' => 'required',
-            'topic' => 'required',
+            'topic' => 'required|in:ide bisnis,rencana bisnis,startup,UMKM,marketing,relasi bisnis,hukum,lainnya',
         ]);
     }
 }

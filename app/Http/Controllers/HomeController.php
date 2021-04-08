@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
     public function main() {
         $threads = Thread::with(['threadUpVote', 'threadDownVote', 'user', 'comment'])
-            ->orderBy('id', 'desc')
+            ->orderBy('created_at', 'desc')
             ->simplePaginate(10);
         
         

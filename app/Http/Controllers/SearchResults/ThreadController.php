@@ -11,6 +11,7 @@ use App\Models\Space;
 class ThreadController extends Controller
 {
     public function main(Request $request) {
+        $request->search = str_replace('"', "''", $request->search);
 
         $threads = Thread::whereRaw('title regexp "'. $request->search. '"')
         ->with([

@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Thread;
 use App\Models\ThreadReport;
 
+//class for not follow up report
 class IgnoreController extends Controller
 {
     public function main(Request $request) {

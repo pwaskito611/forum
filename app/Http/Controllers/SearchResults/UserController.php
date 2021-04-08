@@ -11,6 +11,7 @@ use App\Models\Space;
 class UserController extends Controller
 {
     public function main(Request $request) {
+        $request->search = str_replace('"', "''", $request->search);
 
         $users = User::whereRaw('name regexp "'. $request->search . '"')
         ->paginate(10);

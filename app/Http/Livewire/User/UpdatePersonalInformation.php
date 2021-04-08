@@ -22,7 +22,7 @@ class UpdatePersonalInformation extends Component
 
     public function submit(Request $request) {
         $submit = User::find(\Auth::user()->id);
-        $submit->name = $this->name;
+        $submit->name = str_replace('"', "''", $this->name);
         $submit->description = $this->description;
         $submit->save();
 

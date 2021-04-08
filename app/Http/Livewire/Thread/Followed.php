@@ -13,6 +13,7 @@ class Followed extends Component
        if(\Auth::check()) {
             $this->followed = Thread::join('following_threads',
             'following_threads.thread_id', '=', 'threads.id')
+            ->select('threads.id', 'threads.title')
             ->where('following_threads.user_id', \Auth::user()->id)
             ->take(10)
             ->get();

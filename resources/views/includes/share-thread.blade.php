@@ -18,14 +18,6 @@
                      <p class="">Twitter</p>
                 </a>
             </li>
-            <li class="hover:bg-gray-200">
-                <button id="copy-link-{{$threadID}}"
-                    class="flex py-1 px-4">
-                    <img src="{{url('asset/link.svg')}}" class="w-6 h-6 rounded-full">&nbsp;
-                     <p class="">Salin link</p>
-                     <input type="hidden" value="{{url('thread/'. $threadID)}}" id="link-{{$threadID}}">
-                </button>
-            </li>
         </ul>
     </div>
 </div>
@@ -45,19 +37,5 @@
             show = false;
             $('#share-thread-link-{{$threadID}}').hide();
         }    
-    });
-
-    $("#copy-link-{{$threadID}}").click(function() {
-        document.getElementById("copy-link-{{$threadID}}")
-        .onclick = function() {
-            let text = document.getElementById("link-{{$threadID}}").value;
-            navigator.clipboard.writeText(text)
-            .then(() => {
-            alert('Text copied to clipboard');
-            })
-            .catch(err => {
-            alert('Error in copying text: ', err);
-            });
-        }
     });
 </script>

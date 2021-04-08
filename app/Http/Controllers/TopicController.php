@@ -12,7 +12,7 @@ class TopicController extends Controller
         $topic = str_replace("-"," ", $topic);
 
         $threads = Thread::with(['threadUpVote', 'threadDownVote', 'user', 'comment'])
-            ->orderBy('id', 'desc')
+            ->orderBy('created_at', 'desc')
             ->where('topic', $topic)
             ->simplePaginate(10);
         

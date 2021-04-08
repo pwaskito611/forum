@@ -16,7 +16,7 @@ class ProfileController extends Controller
             'threadUpVote', 'threadDownVote', 'comment'
         ])
         ->where('user_id', $id)
-        ->orderBy('id', 'desc')
+        ->orderBy('created_at', 'desc')
         ->paginate(5);
 
         $user = User::where('id', $id)->first();
